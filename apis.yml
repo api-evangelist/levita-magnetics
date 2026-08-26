@@ -1,17 +1,35 @@
 aid: levita-magnetics
 name: Levita Magnetics
-description: 'Levita Magnetics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Levita Magnetics is a Mountain View, California medical device company, founded by minimally invasive
+  surgeon Dr. Alberto Rodriguez-Navarro and co-founded by Nicolas Luksic, with an additional office in
+  Santiago, Chile. It develops Magnetic Surgery — the Levita Magnetic Surgical System, in which an
+  external magnet placed on the patient's skin controls a shaftless detachable retractor to enable
+  reduced-port laparoscopic procedures — and the MARS (Magnetic-Assisted Robotic Surgery) platform
+  launched in 2023, an FDA-cleared surgical robotic system used in abdominal and, more recently,
+  pediatric procedures. The MARS platform is built on RTI Connext (the DDS real-time connectivity
+  standard) internally, and Levita has demonstrated AI-guided autonomous camera control during surgery.
+  Levita ships regulated surgical hardware and its embedded control software to hospitals; it operates
+  no public developer program, publishes no API documentation, and exposes no machine-readable API
+  contract on any host it controls.
 url: https://raw.githubusercontent.com/api-evangelist/levita-magnetics/refs/heads/main/apis.yml
+image: https://www.levita.com/wp-content/uploads/2023/11/levita-social-logo.png
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment-pass
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
 tags:
 - Company
+- Medical Devices
+- Surgical Robotics
+- Health Care
+- Robotics
+- Minimally Invasive Surgery
+- Medical Technology
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +38,43 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/levita-magnetics_stock/
+  url: https://www.levita.com/
+- type: Blog
+  url: https://www.levita.com/blog
+- type: BlogRSS
+  url: https://www.levita.com/feed
+- type: Support
+  url: https://www.levita.com/contact
+- type: TermsOfService
+  url: https://www.levita.com/terms
+- type: PrivacyPolicy
+  url: https://www.levita.com/privacy
+- type: LLMsTxt
+  url: llms/levita-magnetics-llms.txt
+- type: DomainSecurity
+  url: security/levita-magnetics-domain-security.yml
+x-enrichment:
+  date: '2026-08-25'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Levita Magnetics ships a regulated surgical robot (MARS) and a magnetic retractor system to
+    hospitals, and the only machine-readable endpoint on any host it controls is the stock WordPress
+    /wp-json/ CMS API behind its marketing site — there is no developer portal, no API reference, no
+    GitHub organization and no published contract of any kind.
+  evidence:
+  - url: https://www.levita.com/openapi.json
+    status: 404
+  - url: https://www.levita.com/.well-known/agent-card.json
+    status: 404
+  - url: https://api.github.com/orgs/levita-magnetics
+    status: 404
+  - url: https://www.magneticsurgery.com/openapi.json
+    status: 404
+  - url: https://www.levita.com/wp-json/
+    status: 200
+  checked: '2026-08-25'

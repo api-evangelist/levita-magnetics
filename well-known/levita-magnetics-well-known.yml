@@ -1,0 +1,46 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live unauthenticated GET of each /.well-known/ path on every host Levita Magnetics controls
+  (www.levita.com, www.magneticsurgery.com). No API host exists — api./developer./docs.levita.com
+  do not resolve — so the two marketing hosts are the complete host set.
+hosts:
+- host: www.levita.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+- host: www.magneticsurgery.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+notes: >-
+  Every path 404s on both hosts, so NO WellKnown, APICatalog or SecurityTxt pointer is wired in
+  apis.yml — this file records a measured absence, not a served surface. Both sites are WordPress
+  behind nginx; the /.well-known/ 404s split into two shapes (a bare nginx 404 for security.txt and
+  llms.txt, the WordPress themed 404 page for the rest), and neither carries a document.
