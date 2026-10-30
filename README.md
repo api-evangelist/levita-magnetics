@@ -64,5 +64,83 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Levita Magnetics is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/levita-magnetics_stock/
+Levita Magnetics is a Mountain View, California medical device company, founded by minimally invasive surgeon Dr. Alberto Rodriguez-Navarro and co-founded by Nicolas Luksic, with an additional office in Santiago, Chile. It develops Magnetic Surgery — the Levita Magnetic Surgical System, in which an external magnet placed on the patient's skin controls a shaftless detachable retractor to enable reduced-port laparoscopic procedures — and the MARS (Magnetic-Assisted Robotic Surgery) platform launched in 2023, an FDA-cleared surgical robotic system used in abdominal and, more recently, pediatric procedures. The MARS platform is built on RTI Connext (the DDS real-time connectivity standard) internally, and Levita has demonstrated AI-guided autonomous camera control during surgery. Levita ships regulated surgical hardware and its embedded control software to hospitals; it operates no public developer program, publishes no API documentation, and exposes no machine-readable API contract on any host it controls.
+
+**Areas:** Company · Medical Devices · Surgical Robotics · Healthcare · Robotics · Minimally Invasive Surgery · Medical Technology · Hardware
+
+## Levita Magnetics on APIs.io
+
+Everything profiled for Levita Magnetics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/levita-magnetics/](https://apis.io/providers/levita-magnetics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Levita Magnetics Domain Security](https://apis.io/security/levita-magnetics/levita-magnetics-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.levita.com/)
+- [Support](https://www.levita.com/contact)
+- [Blog](https://www.levita.com/blog)
+- [Terms of service](https://www.levita.com/terms)
+- [Privacy policy](https://www.levita.com/privacy)
+
+## API Evangelist rating
+
+**Kin Score 10.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.9** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/levita-magnetics/](https://apis.io/providers/levita-magnetics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Levita Magnetics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/levita-magnetics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
